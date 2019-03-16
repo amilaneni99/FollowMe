@@ -28,7 +28,7 @@
             android:layout_gravity="center_horizontal"
             android:elevation="40dp"
             android:padding="10sp"
-            android:src="@drawable/button_img" />
+            android:src="@drawable/navigation" />
 
         <Button
             android:id="@+id/navBtn"

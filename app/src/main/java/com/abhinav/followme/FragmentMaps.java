@@ -116,7 +116,7 @@ public class FragmentMaps extends Fragment implements OnMapReadyCallback {
                     MarkerOptions markerOptions = new MarkerOptions()
                             .position(position)
                             .title("Me :)")
-                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.navigation));
+                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.img));
                     marker =  mMap.addMarker(markerOptions);
                     mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(position,35f));
                 }
