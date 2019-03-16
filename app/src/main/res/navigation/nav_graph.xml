@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentMain">
+    <fragment
+        android:id="@+id/fragmentMain"
+        android:name="com.abhinav.followme.FragmentMain"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragmentMain_to_fragmentMaps"
+            app:destination="@id/fragmentMaps"
+            app:enterAnim="@anim/slide_left_to_right"
+            app:popEnterAnim="@anim/slide_left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMaps"
+        android:name="com.abhinav.followme.FragmentMaps"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>
